@@ -1,0 +1,152 @@
+.best-product {
+    h2 {
+        position: relative;
+        margin: 0 auto;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--main-color);
+        font-family: "Indie Flower", cursive;
+        width: fit-content;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 20%;
+            left: 0;
+            bottom: 0;
+            background-color: var(--main-color);
+        }
+    }
+
+    .best-product-wrraper {
+        height: 200vh;
+        position: relative;
+
+        .sticky {
+            position: sticky;
+            overflow: hidden;
+            top: 0;
+            height: 100vh;
+
+            .el {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .imageContainer {
+                    position: relative;
+                    width: 25vw;
+                    height: 25vh;
+                    background-color: white;
+                    overflow: hidden;
+                    display: flex;
+
+
+                    img {
+                        position: absolute;
+                        object-fit: contain;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .text-wrraper {
+                        left: 0;
+                        top: 27%;
+                        position: absolute;
+                        height: 100px;
+                        width: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 10px;
+                        h3 {
+                            font-size: 11px;
+                            color: var(--main-color);
+                        }
+
+                        P {
+                            font-size: 4px;
+                        }
+
+                        /* button {
+                            font-size: 4px;
+                            width: fit-content;
+                            border: 0;
+                            outline: 0;
+                            padding: 2px 5px;
+                            border-radius: 1.5px;
+                            background-color: var(--main-color);
+                            color: white;
+                            transition: .4s;
+                            cursor: pointer;
+
+                            &:hover {
+                                opacity: .6;
+                            }
+                        } */
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    .imageContainer {
+                        top: -30vh;
+                        left: 5vw;
+                        width: 35vw;
+                        height: 30vh;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .imageContainer {
+                        top: -10vh;
+                        left: -25vw;
+                        width: 20vw;
+                        height: 45vh;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    .imageContainer {
+                        left: 27.5vw;
+                        width: 25vw;
+                        height: 25vh;
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    .imageContainer {
+                        top: 27.5vh;
+                        left: 5vw;
+                        width: 20vw;
+                        height: 25vh;
+                    }
+                }
+
+                &:nth-of-type(6) {
+                    .imageContainer {
+                        top: 27.5vh;
+                        left: -22.5vw;
+                        width: 30vw;
+                        height: 25vh;
+                    }
+                }
+
+                &:nth-of-type(7) {
+                    .imageContainer {
+                        top: 22.5vh;
+                        left: 25vw;
+                        width: 15vw;
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+    }
+}
