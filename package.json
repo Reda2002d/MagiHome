@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://reda2002d.github.io/MagiHome",
-
+  "homepage": "https://Reda2002d.github.io/MagiHome",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
