@@ -1,0 +1,86 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-left: 100px;
+    height: 100vh;
+    gap: 50px;
+    background-image: url(images/studiomcgee_AZHomestead_130-1-scaled-1-90135.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+    animation: slide 2 linear;
+    animation-timeline:view() ;
+    animation-range: entry 0;
+}
+
+@keyframes slide {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.hero-text h1 {
+    color: var(--main-color);
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.hero-text h3 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    color: rgba(87, 87, 87, 0.871);
+    letter-spacing: 0.5px;
+}
+
+.hero-text a {
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.hero-text a:hover {
+    opacity: 0.6;
+}
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img .img {
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+    animation: fade 3s infinite ease-in-out;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}

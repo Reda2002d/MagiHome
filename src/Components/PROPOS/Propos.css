@@ -1,0 +1,142 @@
+.propos{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; /* Change to column for smaller screens */
+    gap: 20px; /* Adjusted for better spacing */
+    justify-content: start;
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin-top: 30px;
+}
+
+.propos .proposText{
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Auto height for flexible content */
+    margin-top: 20px; /* Reduced margin for smaller screens */
+    animation: pra 0.5s linear; /* Add duration to the animation */
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    z-index: 555;
+    display: flex;
+    align-items: center;
+    position: relative; /* Changed to relative for better positioning */
+    right: auto; /* Remove right positioning for smaller screens */
+}
+
+.propos .proposImg{
+    width: 100%; /* Full width for smaller screens */
+    animation: pra 0.5s linear; /* Add duration to the animation */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.propos .proposImg img{
+    max-height: 300px; /* Reduced max height for smaller screens */
+    width: 100%; /* Full width for smaller screens */
+    border-radius: 10px;
+}
+
+.propos .proposText .pra{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 20px; /* Reduced gap for better spacing */
+}
+
+.Propstitel{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; /* Reduced margin for smaller screens */
+    font-size: 20px; /* Adjusted font size for better readability */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--main-color);
+    width: fit-content;
+    animation: pra 0.5s linear; /* Add duration to the animation */
+}
+
+.propos .proposText p span{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+@keyframes pra {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Changed 'scale' to 'transform' */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Changed 'scale' to 'transform' */
+    }
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+    .propos {
+        flex-direction: row; /* Row direction for larger screens */
+        padding: 50px;
+    }
+    
+    .propos .proposText {
+        width: 60%; /* Adjust width for larger screens */
+        height: 290px;
+        margin-top: 80px;
+        position: absolute;
+        right: 80px;
+    }
+
+    .propos .proposImg {
+        width: auto;
+    }
+
+    .propos .proposImg img {
+        max-height: 500px;
+    }
+
+    .propos .proposText .pra {
+        grid-template-columns: 250px 1px 250px;
+        gap: 100px;
+    }
+
+    .Propstitel {
+        margin-top: 60px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .propos {
+        flex-direction: column; /* Column direction for smaller screens */
+        padding: 20px;
+    }
+    
+    .propos .proposText {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        right: auto;
+    }
+
+    .propos .proposImg {
+        width: 100%;
+    }
+
+    .propos .proposImg img {
+        max-height: 300px;
+    }
+
+    .propos .proposText .pra {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Propstitel {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
