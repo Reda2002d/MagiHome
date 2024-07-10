@@ -27,12 +27,11 @@ export default function NavBar(props) {
                  <span class="line line3"></span>
              </div>
              <ul class="menu-items">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Category</a></li>
-                 <li><a href="#">Menu</a></li>
-                 <li><a href="#">Testimonial</a></li>
-                 <li><a href="#">Contact</a></li>
+               <li><NavLink to='/'>Accueil</NavLink></li> 
+               <li><NavLink to='/products'>Produits</NavLink></li>
+               <li><NavLink to='/Nouveautés'>Nouveautés</NavLink></li>
+               <li><NavLink to='/about'>Notre Entreprise</NavLink></li>
+               <li><NavLink to='/contact'>Contact</NavLink></li> 
              </ul>
              
          </div>
