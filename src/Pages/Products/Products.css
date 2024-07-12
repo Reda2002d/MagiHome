@@ -221,13 +221,10 @@
 
             &:hover {
                 transform: scale(1.04);
-
-                /* h3 {
-                    &::after {
-                        width: 100%;
-                    }
-                } */
             }
         }
     }
 }
+
+
+
