@@ -6,7 +6,7 @@ export default function NavBar(props) {
     console.log(props.position)
     return (
 
-        <nav className="nav-bar navbar" style={{position:props.position}}>
+        <nav className="nav-bar navbar" style={{position:props.position,right:props.left}}>
             <div className="logo">
                 <img src={Logo} alt="" />
             </div>

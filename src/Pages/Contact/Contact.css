@@ -63,10 +63,11 @@
 
 #form-details {
     display: flex;
+    position: relative;
     justify-content: center;
     margin: 30px 30px 0 30px;
     padding: 10px;
-    height: 800px;
+    min-height: 800px;
     padding-top: 50px;
 }
 

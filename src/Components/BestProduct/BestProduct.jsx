@@ -58,7 +58,6 @@ export default function BestProduct() {
                                             </div>
                                         </div>
                                         <div className="col-md-6">
-                                            <h3 className="mb-3">25 ans</h3>
                                             <p className="mb-4">{filterData.description}</p>
                                             <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                             <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>

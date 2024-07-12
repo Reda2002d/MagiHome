@@ -19,7 +19,7 @@ export default function Home() {
     
     return (
         <div className="home-page">
-            <NavBar position={'absolute'}/>
+            <NavBar position={'absolute'} left={'55px'}/>
         <div>
             
 
