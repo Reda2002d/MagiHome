@@ -1,8 +1,6 @@
 import BestProduct from "../../Components/BestProduct/BestProduct";
 import Footer from "../../Components/Footer/Footer";
-import Hero from "../../Components/Hero/Hero";
 import NavBar from "../../Components/NavBar/NavBar";
-import Propos from "../../Components/PROPOS/Propos";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
@@ -14,12 +12,12 @@ import './Home.css'
 
 
 
-export default function Home() {
+function Home(){
 
     
     return (
         <div className="home-page">
-            <NavBar position={'absolute'} left={'55px'}/>
+            <NavBar position={'absolute'} px={'65px'}/>
         <div>
             
 
@@ -123,3 +121,7 @@ export default function Home() {
         </div>
     )
 }
+
+
+
+export default Home
